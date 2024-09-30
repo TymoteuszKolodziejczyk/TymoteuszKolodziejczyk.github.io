@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,16 +8,17 @@
     <title>Rock, Paper, Scissors Game</title>
 
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div id="buttons">
-        <input type="image" src="img/rock.jpg" onclick="game(0)"></input>
-        <input type="image" src="img/paper.jpg" onclick="game(1)"></input>
-        <input type="image" src="img/scissors.jpg" onclick="game(2)"></input>
-    </div>
-    <center><p id="wynik">Result...</p></center>
+        <input type="image" src="img/rock.jpg" width="200" height="200" onclick="game(0)"></input>
+        <input type="image" src="img/paper.jpg" width="200" height="200" onclick="game(1)"></input>
+        <input type="image" src="img/scissors.jpg" width="200" height="200" onclick="game(2)"></input>
+    </div>    
+    <p id="wynik" class="centerr">Result...</p>
 
-    <img src="" id="result">
+    <img src="" alt="" id="result" class="centerr" style="width: 400px;">
     </p>
 </body>
 </html>
