@@ -27,5 +27,5 @@ function game(chosen)
     image.src = arr[rand]
     image.width = 200
     let wynik = document.getElementById("wynik")
-    wynik.innerHTML = win + rand
+    wynik.innerHTML = win
 }
