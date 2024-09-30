@@ -23,8 +23,9 @@ function game(chosen)
         win = "You won!"
     }
 
-    var image = document.querySelector("#result");
-    image.src = arr[rand];
-    let wynik = document.getElementById("wynik");
+    var image = document.querySelector("#result")
+    image.src = arr[rand]
+    image.width = 200
+    let wynik = document.getElementById("wynik")
     wynik.innerHTML = win + rand
 }
