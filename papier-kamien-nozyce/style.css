@@ -1,6 +1,7 @@
 #buttons, #result{
     text-align: center;
 }
+
 input{
     margin-right:75px;
     margin-left: 75px;
@@ -25,6 +26,14 @@ input{
 }
 
 body{
-    background-image: url("img/background.jpg");
+    background-image: url("img/background2.jpg");
     background-repeat: no-repeat;
+}
+
+.centerr 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; /* or any other percentage */
 }
