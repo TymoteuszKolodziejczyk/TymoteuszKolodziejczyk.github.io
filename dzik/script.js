@@ -1,46 +1,25 @@
+var pkt = 0;
 
-
-function zwieranie(liczbbbb, digitabel) {
-    if (liczbbbb == digitabel) {
-        return true;
-    }
-    while (liczbbbb != 0) {
-        if (liczbbbb % 10 == digitabel) {
-            return true;
-        }
-        liczbbbb = Math.floor(liczbbbb / 10);
-    }
-    return false;
+function los()
+{
+    var liczba = document.querySelector("#liczba")
+    liczba.innerHTML = Math.floor(Math.random() * 100 + 1)
 }
 
-function trzepac() {
-    if(pedal){
-        puntky--;
-    }punktyH.innerHTML = puntky;
-    var liczba = Math.floor(Math.random() * 100 + 1);
-    let liczbaH = document.querySelector("#liczba");
-    liczbaH.innerHTML = liczba;
-    pedal = 0;
-}
-
-function clicked(opcja) {
-    pedal = 1;
-    if(opcja){
-        if(liczba%7==0 || zwieranie(liczba, 7)){
-            puntky++;
-        }else{
-            puntky--;
-        }
-    }else{
-        if(liczba%7!=0 && !zwieranie(liczba, 7)){
-            puntky++;
-        }else{
-            puntky--;
-        }
+function clicked(opcja)
+{
+    var wynik = document.querySelector("#wynik")
+    let num = los.toString()
+    if((opcja && (los % 7 == 0 || num.includes("7"))) || (!opcja && (los % 7 != 0 || !num.includes("7"))))
+    {
+        pkt++
     }
+    else
+    {
+        pkt--
+    }
+    los()
+    wynik.innerHTML = pkt;
 }
 
-let myInterval = setInterval(trzepac, Number(prompt("Podaj szybkość gry w sekundach!")) * 1000);
-var puntky = 0;
-var pedal = 0;
-var punktyH = document.querySelector("#punkty");
+setInterval(los, 5000)
