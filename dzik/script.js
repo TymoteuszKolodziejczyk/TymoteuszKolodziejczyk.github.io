@@ -1,3 +1,3 @@
-function trzepac{
+function trzepac(){
     return Math.floor(Math.random*100)
 }
