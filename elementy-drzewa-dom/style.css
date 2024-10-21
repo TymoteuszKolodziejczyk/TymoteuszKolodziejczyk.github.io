@@ -1,0 +1,14 @@
+.newOpinion
+{
+    color: green;
+    font-weight: bold;
+}
+
+.catcolors { 
+    color: orange; 
+    background-color: black; 
+} 
+
+p.animal { 
+    color: red; 
+} 
