@@ -1,6 +1,4 @@
-var puntky = 0;
-var pedal = 0;
-var punktyH = document.querySelector("#punkty");
+
 
 function zwieranie(liczbbbb, digitabel) {
     if (liczbbbb == digitabel) {
@@ -43,4 +41,6 @@ function clicked(opcja) {
 }
 
 let myInterval = setInterval(trzepac, Number(prompt("Podaj szybkość gry w sekundach!")) * 1000);
-
+var puntky = 0;
+var pedal = 0;
+var punktyH = document.querySelector("#punkty");
