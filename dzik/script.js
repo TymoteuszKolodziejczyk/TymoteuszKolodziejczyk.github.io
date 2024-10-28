@@ -27,7 +27,7 @@ function clicked(opcja)
         let dobrze = document.querySelector("#dobrze")
         let wynik = document.querySelector("#wynik")
         let num = liczba.toString()
-        if((opcja && (liczba % 7 == 0 || num.includes('7'))) || (opcja == false && (liczba % 7 != 0 || num.includes('7') == false)))
+        if((opcja && (liczba % 7 == 0 || num.includes('7'))) || (opcja == false && liczba % 7 != 0 && num.includes('7') == false))
         {
             pkt++
             dobrze.src = "img/good.png"
