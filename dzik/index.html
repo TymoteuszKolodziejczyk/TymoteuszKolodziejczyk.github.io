@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +8,33 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <div>
+    <div class="d">
         <h1>Gra w Dzika</h1>
         <h2>Wylosowana liczba:</h2>
         <p id="liczba"></p>
     </div>
-    <div id="obrazki">
-        <img src="img/nie.jpg" alt="Nie">
-        <img src="img/dzik.jpg" alt="Dzik">
+    <div id="obrazki" class="d">
+        <img src="img/nie.jpg" alt="Nie" onclick="clicked(false)">
+        <img src="img/dzik.jpg" alt="Dzik" onclick="clicked(true)">
     </div> 
-    <div>
-        <h2>Liczba punktów:</h2>
-        <p id="wynik"></p>
+    <div class="d" style="display: flex;">
+        <div style="width: 80%; float: left;">
+            <h2>Liczba punktów:</h2>
+            <p id="wynik"></p>
+        </div>
+        <img src="" alt="" id="dobrze" style="width: 100px; height: auto; margin-left: 20px;">
+    </div> 
+    <div class="d">
+        <p style="width: 40%; text-align: left; float: left;">Punkt dostaje się za poprawne wyznaczenie dzik/nie dzik. Punkt jest odejmowany za niepoprawne wyznaczenie dzik/nie dzik lub niezazanaczenie niczego.</p>
+        
+        <p>Co ile sekund ma losować się nowa liczba?</p>
+        <button onclick="time(1)">1 sek</button>
+        <button onclick="time(2)">2 sek</button>
+        <button onclick="time(3)">3 sek</button>
+        <button onclick="time(4)">4 sek</button>
+        <button onclick="time(5)">5 sek</button>
+
+        <button onclick="start()">START / RESTART GRY</button>
     </div> 
 </body>
 </html>
