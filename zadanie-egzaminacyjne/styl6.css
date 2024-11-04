@@ -1,4 +1,66 @@
 body
 {
-    background-color: lightblue;
+    font-family: "Georgia";
+    margin: 0;
+}
+
+#blok-lewy
+{
+    float: left;
+    background-color: maroon;
+    color: white;
+    height: 600px;
+    width: 30%;
+}
+
+#blok-prawy
+{
+    background-color: maroon;
+    float: right;
+    color: white;
+    height: 600px;
+    width: 70%;
+    overflow: auto;
+}
+
+footer
+{
+    background-color: dimgray;
+    color: white;
+    width: 100%;
+    padding: 2px;
+    clear: both;
+}
+
+#indigo
+{
+    background-color: indigo;
+}
+
+#steelblue
+{
+    background-color: steelblue;
+}
+
+#olive
+{
+    background-color: olive;
+}
+
+#gib
+{
+    float: left;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+#lorem
+{
+    clear: both;
+    padding: 10px;
+}
+
+ul
+{
+    display: inline-block;
 }
