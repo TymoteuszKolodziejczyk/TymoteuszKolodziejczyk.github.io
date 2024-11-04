@@ -8,6 +8,51 @@
     <script src="script.js"></script>
 </head>
 <body>
+    <section id="blok-lewy">
+        <h1>Konfigurator stylu</h1>
+
+        <p>Podaj kolor tła</p>
+
+        <button id="indigo" onclick="color('indigo')">Indigo</button>
+        <button id="steelblue" onclick="color('steelblue')">SteelBlue</button>
+        <button id="olive" onclick="color('olive')">Olive</button>
+
+        <p>Podaj kolor czcionki</p>
+
+        <select name="czcionka" id="czcionka" onclick="czcionka(this.value)">
+            <option value="White">White</option>
+            <option value="Tan">Tan</option>
+            <option value="Bisque">Bisque</option>
+            <option value="Plum">Plum</option>
+        </select>
+
+        <p>Podaj rozmiar czcionki w procentach, np. 200%</p>
+
+        <input type="text" id="rozmar" name="rozmiar" value="100%" onchange="rozmiar(this.value)">
+
+        <p>Czy rysunek ma mieć ramkę?</p>
+
+        <input type="checkbox" id="ramka" name="ramka" checked onclick="ramka()"><label for="ramka">Rysuj ramkę</label>
+
+        <p>Jaki jest typ punktora listy?</p>
+
+        <input type="radio" id="dysk" name="r" value="disc" onclick="listt(this.value)"><label for="dysk">dysk</label>
+        <input type="radio" id="kwadrat" name="r" value="square" onclick="listt(this.value)"><label for="kwadrat">kwadrat</label>
+        <input type="radio" id="okrag" name="r" value="circle" onclick="listt(this.value)"><label for="okrag">okrąg</label>
+    </section> 
+
+    <section id="blok-prawy">
+        <img src="gibraltar.jpg" alt="półwysep Gibraltar" id="gib">
+
+        <ul id="lista">
+            <li>element 1</li>
+            <li>element 2</li>
+            <li>element 3</li>
+        </ul>
+
+        <p id="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quae maiores numquam quos nam totam similique vero doloremque, ad quasi nisi veritatis cumque laudantium dolorem natus, quaerat quisquam? Quod quos fuga vero commodi, consequatur provident aut illo odio quis aspernatur dolorem eius nisi ad laboriosam, quo labore adipisci. Eligendi enim distinctio delectus facilis necessitatibus explicabo dignissimos fuga temporibus? Totam itaque similique numquam quos incidunt delectus ea consequuntur eum natus dicta fuga tempora, quia ipsum perferendis distinctio ullam? Obcaecati asperiores, minima inventore soluta repudiandae quae nostrum beatae accusantium ipsam fuga at perferendis quis voluptatem cupiditate iusto culpa earum ad incidunt nulla dolores similique vero ex. Odit at ut corporis eaque corrupti animi vel, earum explicabo minus, aut laborum officiis nihil nulla hic quo voluptatum temporibus repudiandae magni perferendis, minima fuga praesentium laboriosam. Inventore repudiandae illo dolorum, blanditiis voluptatum eaque quod architecto facere dolores tempore excepturi officia nobis nostrum voluptate fugiat! In eius nihil cum. Vitae maiores eius sit suscipit odio. Deleniti molestiae ab sint veniam suscipit perspiciatis, ipsum quaerat, maiores iure officia eveniet a itaque. Non nisi officia blanditiis ut commodi harum quae incidunt placeat veritatis, officiis repellendus itaque quos impedit ea maiores amet molestiae exercitationem corporis culpa nam sequi. Repellendus.</p>
+    </section>
     
+    <footer>Autor: Tymoteusz Kołodziejczyk</footer>
 </body>
 </html>
