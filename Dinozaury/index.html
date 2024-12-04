@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinozaury</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body id="container">
+    <div id="menu">
+        <h1>Dinozaury</h1>
+        
+        <p style="text-align: left; margin-bottom: 40px;">Gracz musi uciekać dinozaurem przed T-rexami, których ilość będzie zwiększać się co trzy sekundy. Za każdego dodanego T-rexa, dostaje się jeden punkt. Jeśli gracz dotknie T-rexa, przegrywa.</p>
+        
+        <label for="speed">Wybierz szybkość przeciwników (1-10):</label><br>
+        <input type="number" id="speed" min="1" max="12" value="10">
+		<br><br>
+        <button id="rozpocznij">Rozpocznij</button>
+    </div>
+
+    <script>
+        document.getElementById("rozpocznij").addEventListener("click", function() {
+            const speed = document.getElementById("speed").value;
+            localStorage.setItem("poziom", speed);
+            window.location.href = "gra.html";
+        });
+    </script>
+</body>
+</html>
