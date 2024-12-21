@@ -1,1 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tymoteusz Kołodziejczyk">
+    <meta name="keywords" content="miasta świata, New York, Nowy Jork, USA">
+    <title>7 największych miast świata</title>
+    <link rel="stylesheet" type="text/css" href="style.css">  
+</head>
+<body>
+  <div class="sidebar">
+    <a class="active" href="index.html">Strona główna</a>
+    <a href="ankieta.html">Ankieta</a>
+    <a href="tokio.html">Tokio</a>
+</div>  
+  <div class="content">
+    <div id="tytul-container"><h1 id="tytul">7 największych miast świata</h1></div>
+    
+    <div id="main-container2">
+      <table>
+        <tr>
+            <td>Lp.</td>
+            <td>Miasto</td>
+            <td>Państwo</td>
+            <td>Populacja (2022)</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Tokio</td>
+            <td>Japonia</td>
+            <td>37 274 000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Delhi</td>
+            <td>Indie</td>
+            <td>32 065 760</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Szanghaj</td>
+            <td>Chińska Republika Ludowa</td>
+            <td>28 516 904</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Dhaka</td>
+            <td>Bangladesz</td>
+            <td>22 478 116</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>São Paulo</td>
+            <td>Brazylia</td>
+            <td>22 429 800</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Meksyk</td>
+            <td>Meksyk</td>
+            <td>22 085 140</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Kair</td>
+            <td>Egipt</td>
+            <td>21 750 020</td>
+        </tr>
+        <tr>
+          <td colspan="4">Źr. danych - <a href="https://pl.wikipedia.org/wiki/Lista_100_najwi%C4%99kszych_miast_%C5%9Bwiata" target="_blank" class="link">Wikipedia</a> <span class="under">(otwiera się w nowej karcie)</span></td>
+      </tr>
+      </table>
 
+      <div class="slideshow-container">
+        <div class="mySlides fade"><img src="img/tokio.jpg" class="hundred" alt="Img"></div>
+        <div class="mySlides fade"><img src="img/delhi.jpg" class="hundred" alt="Img"></div>
+        <div class="mySlides fade"><img src="img/szanghaj.jpg" class="hundred" alt="Img"></div>
+        <div class="mySlides fade"><img src="img/dhaka.jpg" class="hundred" alt="Img"></div>
+        <div class="mySlides fade"><img src="img/sao-paulo.jpg" class="hundred" alt="Img"></div>
+        <div class="mySlides fade"><img src="img/meksyk.jpg" class="hundred" alt="Img"></div>
+        <div class="mySlides fade"><img src="img/kair.jpg" class="hundred" alt="Img"></div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        <br>
+        <div class="c">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span> 
+          <span class="dot" onclick="currentSlide(6)"></span> 
+          <span class="dot" onclick="currentSlide(7)"></span>  
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <div id="stopka">
+    Tymoteusz Kołodziejczyk 2tc
+  </div>
+</body>
+</html>
